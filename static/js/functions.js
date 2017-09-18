@@ -8,9 +8,8 @@ function thisTime() {
   return (now.getHours() > 9 ? now.getHours() : '0' + now.getHours()) + ':' + (now.getMinutes() > 9 ? now.getMinutes() : '0' + now.getMinutes());
 }
 
-//var urlServer = 'http://81.177.26.143:3000';
-
-var urlServer = 'http://localhost:3000'; 
+var urlServer = 'https://82d014af.ngrok.io';
+//var urlServer = 'http://localhost:3000'; 
 
 function httpGet(url, type = 'text') {
   if (window.dataUser == undefined) {

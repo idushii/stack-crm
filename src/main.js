@@ -48,7 +48,7 @@ const app = new Vue({
     /*$.post(`http://books-proger.esy.es/url.php`, function(url) {
       urlServer = url;
     })//*/
-    urlServer = 'https://82d014af.ngrok.io'
+    //urlServer = 'https://82d014af.ngrok.io'
 
   }
 })
