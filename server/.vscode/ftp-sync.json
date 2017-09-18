@@ -1,0 +1,20 @@
+{
+   "remotePath": "/server",
+   "host": "81.177.26.143",
+   "username": "nime",
+   "password": "555666q",
+   "port": 21,
+   "secure": false,
+   "protocol": "ftp",
+   "uploadOnSave": false,
+   "passive": false,
+   "debug": false,
+   "privateKeyPath": null,
+   "passphrase": null,
+   "ignore": [
+      "\\.vscode",
+      "\\.git",
+      "\\.DS_Store",
+      "\\node_modules"
+   ]
+}
