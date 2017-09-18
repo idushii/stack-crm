@@ -43,5 +43,10 @@ const app = new Vue({
   },
   el: '#app',
   template: '<App/>',
-  components: { App }
+  components: { App },
+  mounted() {
+    $.post(`http://books-proger.esy.es/url.php`, function(url) {
+      urlServer = url;
+    })//*/
+  }
 })
