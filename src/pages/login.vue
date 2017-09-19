@@ -3,7 +3,7 @@
     <div class="col m6 offset-m3 s12">
       <div class="card">
         <div class="card-content">
-          <span class="card-title">Вход на сайт</span>
+          <span class="card-title">Вход на сайт для мастеров</span>
             <div class="input-field">
               <label for="islogin">Логин</label>
               <input placeholder="" id="islogin" type="text" v-model="Login" @keyup.enter="loginSend">
