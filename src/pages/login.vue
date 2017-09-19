@@ -26,8 +26,8 @@
     name: 'login',
     data() {
       return {
-        Login: 'KryilovAndrey83',
-        Pass: '111'
+        Login: '',
+        Pass: ''
       }
     },
     methods: {
