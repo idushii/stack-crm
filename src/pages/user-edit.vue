@@ -126,7 +126,7 @@
     },
     mounted() {
       if (!this.id) {
-        this.idProfile = 1
+        this.idProfile = this.$root.$store.state.login.Id
       }
       httpGet(`${urlServer}/user/${this.id || this.idProfile}`, 'json')
         .then(json => {
