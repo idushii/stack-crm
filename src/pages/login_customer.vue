@@ -7,23 +7,23 @@
             <div class="col s12">
               <div class="card-title"> Вход на сайт для клиента </div>
             </div>
-            <div class="col 10 s9">
+            <div class="col s12">
               <div class="input-field">
                 <label for="islogin">Телефон</label>
                 <input placeholder="" id="islogin" type="text" v-model="Phone">
               </div>
             </div>
-            <div class="col m2 s3">
-              <button class="waves-effect waves-teal btn-flat" @click="sendSMS"><i class="fa fa-key" aria-hidden="true"></i></button>
-            </div>
-            <div class="col 10 s9">
+            <div class="col s12">
               <div class="input-field">
               <label for="isPass">Пароль</label>
               <input placeholder="" id="isPass" type="text" v-model="Pass">
               </div>
             </div>
-            <div class="col m2 s3">
-              <button class="waves-effect waves-teal btn" @click="login"><i class="fa fa-sign-in" aria-hidden="true"></i></button>
+            <div class="col s6">
+              <button class="waves-effect waves-teal btn" @click="sendSMS">Получить пароль</button>
+            </div>
+            <div class="col s6">
+              <button class="waves-effect waves-teal btn right" @click="login">Войти</button>
             </div>
           </div>
         </div>
@@ -37,8 +37,8 @@
     name: 'login_customer',
     data() {
       return {
-        Phone: '79133813105',
-        Pass: '111111',
+        Phone: '',
+        Pass: '',
         isFormPass: false
       }
     },

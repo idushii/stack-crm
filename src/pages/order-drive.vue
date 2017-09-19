@@ -98,7 +98,7 @@
         })
         .catch((err) => {
           Materialize.toast('Ошибка соединения.', 5000)
-          Materialize.toast('Обработка подгрузки из кеша.', 5000)
+          //Materialize.toast('Обработка подгрузки из кеша.', 5000)
         })
     }
   }

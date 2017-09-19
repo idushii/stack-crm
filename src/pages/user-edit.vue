@@ -54,7 +54,7 @@
     </a>
     <ul>
       <li class="waves-effect waves-light" @click="change_pass"><a>Сменить пароль</a></li>
-      <li class="waves-effect waves-light" v-if="this.id & this.id != 'new'"><a>Выдать деньги</a></li>
+      <!--li class="waves-effect waves-light" v-if="this.id & this.id != 'new'"><a>Выдать деньги</a></li-->
     </ul>
   </div>
 

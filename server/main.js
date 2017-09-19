@@ -252,6 +252,11 @@ app.get(/\/user/, function (req, res) {
 
     Promise.all([user, roles])
       .then(results => {
+        results[0].Sum = 0;
+        results[0].procent = 60;
+        results[0].UserTelegram = '';
+        results[0].phone = '';
+        
         res.send({ result: 1, user: results[0], roles: results[1] });
       })
       .catch(err => {

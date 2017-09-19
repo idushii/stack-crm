@@ -8,8 +8,6 @@
                 <p>Статус: {{orderStatus}}</p>
                 <p>Клиент: {{order.ClientFIO}}</p>
                 <p>Время регистрации заказа: {{order.Acception_Time}} {{order.Acception_Date}}</p>
-                <p>Время разговора с клиентом: Date</p>
-                <p>Время приезда к клинету: Date</p>
                 <p>Время завершения заказа: {{order.Finish_Time}} {{order.Finish_Date}}</p>
                 <p>Выполнены работы: {{order.Descript}}</p>
                 <p>Мастер: {{MasterFIO}}</p>
@@ -98,7 +96,8 @@
             this.services = json.services;
             this.orderStatus = this.status[json.order.Progress - 1].Title
             this.Sum = 0;
-            let Master = json.users[this.order.MasterId];
+            this.users = json.users;
+            let Master =  this.users.filter(u => u.Id == this.order.MasterId).pop();
             this.MasterFIO = Master.UserFIO;
 
             if (this.order.Descript) {
