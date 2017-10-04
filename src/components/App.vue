@@ -19,6 +19,6 @@
   }
 </script>
 
-<style">
+<style>
 
 </style>
