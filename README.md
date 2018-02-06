@@ -1,21 +1,37 @@
-# empty-project
+# Установка
 
-> A Vue.js project
+Для того, чтобы установить локально систему `stack-crm` необходимо выполнить следующий пункты:
 
-## Build Setup
+- Создать базу данных MySQL и импортировать в нее файл `server/diplom.sql`. Наименование БД по умолчанию является `diplom`.
+- Запустить Node JS скрипт `server/main.js`. Этот скрипт является серверной частью системы.
+- Разместить файлы `docs/*` на http сервере
 
-``` bash
-# install dependencies
-npm install
+# Разработка
+Для того, чтобы начать разработку необходимо выполнить команду `npm run dev`.
 
-# serve with hot reload at localhost:8080
-npm run dev
+Для сборки готового проекта необходимо выполнить команду `npm dun build`.
 
-# build for production with minification
-npm run build
+# Настройки проекта
+Важной настройкой является адрес сервера. Это базовый URL для доступа к серверу. Он задается в файле `functions.js`. Важно, что в процессе разработки необходимо править файл `static/js/functions.js`, а для собранного проекта файл `docs/static/js/functions.js`
 
-# build for production and view the bundle analyzer report
-npm run build --report
-```
+# Требования
+Для успешной работы системы необходимы:
+- Node JS
+- MySQL
+- http сервер
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Используемые программные средства
+При разработке использовались следующие программные средства:
+- Node JS
+- NPM
+- MySQL
+
+При разработке использовались следующие фреймворки:
+- Vue JS в качестве основной системы Front End.
+- Materialize в качестве основного CSS фреймворка.
+- Express в качестве основной системы Back End.
+
+**Важно!** Разработка ведется с использованием NPM для Vue JS.
+
+## СМС
+- Для получения пароля в СМС используется сервис `sms.ru`. Стоимость каждой смс сообщения необходимо уточнять на главной странице сервиса.
